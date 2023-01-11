@@ -1,13 +1,12 @@
 import time
 import requests
-from datetime import dt
+from datetime import datetime
 import smtplib
 
-MY_LAT = 41.006808 # Your latitude
-MY_LONG = 28.792359 # Your longitude
-MY_EMAIL = "emirbora85@outlook.com"
-PASSWORD = "e2001t2001"
-
+MY_LAT =  # Your latitude
+MY_LONG = # Your longitude
+MY_EMAIL = # Your Email
+PASSWORD = # Your Email's Password
 while True:
     # run the code every 60 seconds.
     time.sleep(60)
@@ -50,7 +49,7 @@ while True:
             mail.starttls()
             mail.login(user=MY_EMAIL,password=PASSWORD)
             mail.sendmail(from_addr=MY_EMAIL,
-                            to_addrs="emirboratasci@gmail.com",
+                            to_addrs=#Email which message to be sent,
                             msg="Subject:LOOK UP\n\nThe ISS is above you in the sky ")
 
 
